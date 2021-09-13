@@ -6,7 +6,7 @@
 
 ## Project Description
 
-Use this section to describe your final project and perhaps any links to relevant sites that help convey the concept and\or functionality.
+In my house, there are many plants. The current count sits at around 40. I'm working to create a lightweight app that helps me keep track of my plants, where they're located, and the ability to add more (because I'll always end up with more). For my strech goals, I'd like to create the ability to add a picture, the capacity to track when they were last watered, and create a field to list their requirements (water, sun, fertilizer, etc.).
 
 
 ## Wireframes
