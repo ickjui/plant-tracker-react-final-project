@@ -15,7 +15,7 @@ Upload images of wireframe to cloudinary and add the link here with a descriptio
 
 - [React Plant Tracker](https://res.cloudinary.com/dwsmrfioc/image/upload/v1631575061/Scratchpad_ulsm6c.jpg)
 - [Plant Tracker description - MVP + stretch goals](https://res.cloudinary.com/dwsmrfioc/image/upload/v1631575069/Scratchpad_irvkki.jpg)
-- [add link to your react architecture]()
+- [App Architecture is in progress! 🚧 Still figuring out which parts will go into the MVP!]()
 
 
 ### MVP/PostMVP - 5min
