@@ -2,11 +2,11 @@
 
 ## Project Links
 
-- [CodeSandbox Link]()
+- [CodeSandbox Link: Plant Tracking App](https://codesandbox.io/s/plant-tracking-app-final-liuig)
 
 ## Project Description
 
-In my house, there are many plants. The current count sits at around 40. I'm working to create a lightweight app that helps me keep track of my plants, where they're located, and the ability to add more (because I'll always end up with more). For my strech goals, I'd like to create the ability to add a picture, the capacity to track when they were last watered, and create a field to list their requirements (water, sun, fertilizer, etc.).
+In my house, there are many plants. The current count sits at around 40. I'm working to create a lightweight app that helps me keep track of my plants, where they're located, and log their primary requirements. For my strech goals, I'd like to create the ability to add a picture, the capacity to track when they were last watered, and create a field to list their requirements (water, sun, fertilizer, etc.).
 
 
 ## Wireframes
@@ -15,33 +15,21 @@ Upload images of wireframe to cloudinary and add the link here with a descriptio
 
 - [React Plant Tracker](https://res.cloudinary.com/dwsmrfioc/image/upload/v1631575061/Scratchpad_ulsm6c.jpg)
 - [Plant Tracker description - MVP + stretch goals](https://res.cloudinary.com/dwsmrfioc/image/upload/v1631575069/Scratchpad_irvkki.jpg)
-- [App Architecture is in progress! 🚧 Still figuring out which parts will go into the MVP!]()
-
 
 ### MVP/PostMVP - 5min
 
 The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
 
 #### MVP EXAMPLE
-- Home page with several sections about my site
-- Products page that will render product info pulled in via an API  
-- Ability for user to favorite a product
-- Ability for user to add product to shopping cart
+- Landing page with Plant Tracking app!™️
+- Tracking each plant and their location, sun requirements, and date entry field for when they were last watered
+- Router components with additional resources as well as information on plant hardiness zones
 
 #### PostMVP EXAMPLE
 
-- Add Stripe or Shopify Pay for checkout
-- Caputre users email in a form and send an automated response
-- Build the app for mobile/tablet/desktop
-
-## API
-
-If you opted to make use of an API then use this section to include info about the API you have chosen and a code snippet of the data that it returns and is required for your project. 
-
-
-```
-{data: {} }
-```
+- Add the option to include a picture of the plant
+- Complete state on the drop downs so that selections are retained
+- Include ```useLocalStorage``` so that information is retained after a page refresh
 
 ## Components
 ##### Writing out your components and its descriptions isn't a required part of the proposal but can be helpful.
@@ -51,19 +39,34 @@ Based on the initial logic defined in the previous sections try and breakdown th
 | Component | Description | 
 | --- | :---: |  
 | App | This will make the initial data pull and include React Router| 
-| Header | This will render the header include the nav | 
-| Footer | This will render the header include the nav | 
+| Header | This will render the header that is consistent along all views | 
+| Tracker | The entree of the app - contains all of the app state. Shiny drag and drop capabilities, too! ✨ |
+| Column | Renders a column four times based on the information from ```initial-data.js```|
+| Task | Renders the individual 'tasks' or, in this case, plant cards based on the information from ```initial-data.js```|
+| RegionalMap | Renders text, a USDA hardiness map, and a form to locate your own region 🗺️|
+| MoreResources | Renders external links for more information on taking care of your loved ones 🌱|
+
 
 
 ## Additional Libraries
- Use this section to list all supporting libraries and thier role in the project such as Axios, ReactStrap, D3, etc. 
+
+I relied heavily on Atlassian's public and private component library as well as react-beautiful-dnd (drag and drop). The drag and drop is the core functionality of the tracker and each card/task/plant renders out components from Atlassian's library. I also used a mix of CSS and Styled Components for a lot of the styling across the pages.
+
+- [react-beautiful-dnd](https://github.com/atlassian/react-beautiful-dnd)
+- [Atlassian Design System: Date Picker](https://atlassian.design/components/datetime-picker/date-picker/examples)
+- [Atlassian Design System: Selector](https://atlassian.design/components/select/examples)
+- [Styled Components 💅](https://styled-components.com/)
+
 
 ## Code Snippet
 
-Use this section to include a brief code snippet of functionality that you are proud of an a brief description.  Code snippet should not be greater than 10 lines of code. 
+I had a lot of small and silly hiccups that I'm happy I was able to push through. I strugled with implementing Styled Components and Router! So I'm happy that both of these pieces are working in full force. 
 
 ```
-function reverse(string) {
-	// here is the code to reverse a string of text
-}
+ <Switch>
+   <Route path="/tracker" component={Tracker} />
+   <Route exact path="/" component={Tracker} />
+   <Route path="/moreresources" component={MoreResources} />
+   <Route path="/regionalmap" component={RegionalMap} />
+ </Switch>
 ```
