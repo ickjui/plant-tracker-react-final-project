@@ -17,16 +17,12 @@ Upload images of wireframe to cloudinary and add the link here with a descriptio
 - [Plant Tracker description - MVP + stretch goals](https://res.cloudinary.com/dwsmrfioc/image/upload/v1631575069/Scratchpad_irvkki.jpg)
 - [Plant Tracking App architecture](https://docs.google.com/drawings/d/19mx3zz2GPdZG72H-8I7oiO8FoaygPNBMJL7sBsnZXfU/edit?usp=sharing)
 
-### MVP/PostMVP - 5min
-
-The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
-
-#### MVP EXAMPLE
+#### MVP 
 - Landing page with Plant Tracking app!™️
 - Tracking each plant and their location, sun requirements, and date entry field for when they were last watered
 - Router components with additional resources as well as information on plant hardiness zones
 
-#### PostMVP EXAMPLE
+#### PostMVP/stretch-goals
 
 - Add the option to include a picture of the plant
 - Complete state on the drop downs so that selections are retained
