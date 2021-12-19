@@ -1,0 +1,116 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.body {
+  background-color: #64958f;
+  padding: 0;
+}
+
+.map-header {
+  font-family: "Bungee Shade", cursive;
+  text-align: center;
+  color: #ffbb91;
+  background-color: #065c6f;
+  height: 80px;
+  line-height: 60px;
+  padding: 10px;
+  font-size: 40px;
+}
+
+.map-paragraph {
+  color: #ffbb91;
+  font-size: 20px;
+  padding: 15px;
+  text-align: center;
+  border: 6px solid;
+  border-radius: 20px;
+  margin: 50px;
+  font-family: Montserrat, sans-serif;
+}
+
+.map-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+.resources-column {
+  height: 650px;
+  width: 350px;
+  background: #faf3dd;
+  border-radius: 0% 0% 0% 0% / 0% 0% 0% 0%;
+  color: black;
+  box-shadow: 20px 20px rgba(0, 0, 0, 0.15);
+  margin: 20px;
+}
+
+form {
+  margin: 0 auto;
+  width: 25%;
+}
+
+a {
+  color: #ffbb91;
+}
+
+button {
+  background-color: #065c6f;
+  border: none;
+  color: white;
+  padding: 15px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 10px;
+  box-shadow: 4px 4px #888888;
+}
+
+input {
+  padding: 15px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 10px;
+}
+
+.nav-links {
+  color: #ffbb91;
+  padding: 0.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  font-family: Sansita Swashed, cursive;
+  font-size: 20px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.resources-column {
+  float: left;
+  width: 25%;
+  padding: 20px;
+}
+
+.row {
+  /* font-family: "Sriracha", cursive; */
+  display: block;
+  margin-left: auto;
+  margin-right: 29 auto;
+  width: 93%;
+  font-size: 19px;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
