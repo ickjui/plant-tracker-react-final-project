@@ -4,7 +4,6 @@ const MoreResources = () => {
   return (
     <>
       <h3 className="map-header">More Resources</h3>
-
       <div class="row">
         <div className="resources-column">
           <h2>Blogs/websites</h2>
