@@ -8,7 +8,6 @@ import { HashRouter as Router, Route, Link } from "react-router-dom";
 import Tracker from "./Tracker";
 
 // import App from "./App";
-
 class App extends React.Component {
   render() {
     return (
